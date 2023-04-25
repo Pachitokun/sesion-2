@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+  
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: black;
+    overflow: hidden;
+}
+
+
+
+.card {
+    position: absolute;
+    justify-content: end;
+    width: 570px;
+    color: #fff;
+    text-align: right;
+    padding: 50px;
+    border-radius: 30px;
+    border: 5px solid rgba(225, 225, 225, 0.1);
+    background: rgba(255, 68, 0, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+    justify-content: end;
+    left: 100px;
+
+}
+.card-body{
+    width: 75%;
+
+}
+h5{
+    color: #fc8b3f;
+    font-size: 45px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+.card-img {
+    position: absolute;
+    width: 375px;
+    top: -120px;
+    right: -180px;
+    filter: drop-shadow( 5px 5px 10px  orangered);
+}
+.slowfloat {
+    animation: slowfloat 2s infinite alternate;
+}
+@keyframes slowfloat {
+    0%{
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+.elements{
+    position: absolute;
+    width: 35px;
+    top: 10px;
+    left: 10px;
+}
+label{
+    color: #fff;
+    position: absolute;
+    width: 35px;
+    top: 10px;
+    left: 10px; 
+}
+.charizard{
+    position: absolute;
+    width: 35px;
+    top: 455px;
+    left: 120px; 
+}
+.charizard1{
+    position: absolute;
+    width: 35px;
+    top: 450px;
+    left: 160px;
+    color: #fc8b3f; 
+}
+.card2 {
+    position: absolute;
+    justify-content: end;
+    width: 570px;
+    color: #fff;
+    text-align: right;
+    padding: 50px;
+    border-radius: 30px;
+    border: 5px solid rgba(225, 225, 225, 0.1);
+    background:rgba(0, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+    justify-content: end;
+    left: 1000px;
+    
+
+}
+.card-body2{
+    width: 75%;
+
+}
+h5{
+    color: #fc8b3f;
+    font-size: 45px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+.card-img2 {
+    position: absolute;
+    width: 375px;
+    top: -10px;
+    right: -180px;
+    filter: drop-shadow( 5px 5px 10px  aqua);
+}
+.slowfloat2 {
+    animation: slowfloat 2s infinite alternate;
+}
+@keyframes slowfloat {
+    0%{
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+.elements2{
+    position: absolute;
+    width: 35px;
+    top: 10px;
+    left: 10px;
+}
+.squirtle{
+    color:aqua;
+}
+
+
+
+.card3 {
+    position: absolute;
+    justify-content: end;
+    width: 570px;
+    color: #fff;
+    text-align: right;
+    padding: 50px;
+    border-radius: 30px;
+    border: 5px solid rgba(225, 225, 225, 0.4);
+    background:rgba(139, 69, 19, 0.4);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+    justify-content: end;
+    left: 100px;
+    top: 600px;
+
+}
+.card-body3{
+    width: 75%;
+
+}
+h5{
+    color: #fc8b3f;
+    font-size: 45px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+.card-img3 {
+    position: absolute;
+    width: 375px;
+    top: -10px;
+    right: -180px;
+    filter: drop-shadow( 5px 5px 10px  saddlebrown);
+}
+.slowfloat3 {
+    animation: slowfloat 2s infinite alternate;
+}
+@keyframes slowfloat {
+    0%{
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+.elements3{
+    position: absolute;
+    width: 35px;
+    top: 10px;
+    left: 10px;
+}
+.rhydon{
+    color:saddlebrown;
+}
+
+.squirtle1{
+    position: absolute;
+    width: 35px;
+    top: 450px;
+    left: 1060px;
+    color:aqua; 
+}
+.squirtle2{
+    position: absolute;
+    width: 35px;
+    top: 455px;
+    left: 1020px;
+    color:aqua;
+}
+.rhydon1{
+    position: absolute;
+    width: 35px;
+    top: 815px;
+    left: 8%;
+    color:saddlebrown; 
+}
+.rhydon2{
+    position: absolute;
+    width: 35px;
+    top: 820px;
+    left: 6%;
+    color:saddlebrown;
+}
+p{
+    color: #fff;
+    
+}
+h1{
+    background-color: orangered;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+.Selects{
+    position: absolute;
+    top: 75%;
+    right:30%;
+    border: none;
+    outline: none;
+    padding: 18px 62px;
+    background: #222;
+    color: white;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-sizing: 0 5px 15px rgba(0, 0, 0, .3);
+}
+.Selects span {
+    position: relative;
+    z-index: 2;
+    font-family: inherit;
+}
+.Selects::after{
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 150%;
+    height: 160%;
+    background: orangered;
+    z-index: 1;
+    transform-origin: bottom left;
+    transform: skew(40deg) translateX(-92%) translateY(40%);
+    transition: all .5s ease-in-out;
+}
+.Selects:hover::after {
+    transform: skew(40deg) translateX(.1%);
+}
+.reload {
+    position: absolute;
+    top: 75%;
+    right:15%;
+    border: none;
+    outline: none;
+    padding: 18px 62px;
+    background: #222;
+    color: white;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-sizing: 0 5px 15px rgba(0, 0, 0, .3);
+}
+.reload span {
+    position: relative;
+    z-index: 2;
+    font-family: inherit;
+}
+.reload::after {
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 150%;
+    height: 160%;
+    background: orangered;
+    z-index: 1;
+    transform-origin: bottom left;
+    transform: skew(40deg) translateX(-92%) translateY(40%);
+    transition: all .5s ease-in-out;
+}
+.reload:hover::after {
+    transform: skew(40deg) translateX(.1%);
+}
+
+
+/*boton de fuego*/
+
+.fire{
+    
+    text-transform: uppercase;position: absolute;
+    left: 10%;
+    top: 55%;
+    font-size: 16px;
+    background: rgba(255, 68, 0, 1);
+    font-weight:bold;
+    color:#fff;
+    font-size: 1rem;
+    padding: 10px 1.5rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 1s ease;
+    box-shadow: .5rem .5rem 1rem rgba(255, 68, 0, 0.6);
+
+}
+.water{
+    
+    text-transform: uppercase;
+    position: absolute;
+    left: 60%;
+    top: 55%;
+    font-size: 16px;
+    background:aqua;
+    font-weight:bold;
+    color:#fff;
+    font-size: 1rem;
+    padding: 10px 1.5rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 1s ease;
+    box-shadow: .5rem .5rem 1rem rgba(0, 255, 255, 0.4);
+
+}
+.hearth{
+    text-transform: uppercase;
+    position: absolute;
+    left: 10%;
+    top: 92%;
+    font-size: 16px;
+    background:saddlebrown;
+    font-weight:bold;
+    color:#fff;
+    font-size: 1rem;
+    padding: 10px 1.5rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 1s ease;
+    box-shadow: .5rem .5rem 1rem rgba(139, 69, 19, 0.4);
+}
+.vidasdeljugador{
+    font-size: 18px;
+    position: absolute;
+    left: 55%;
+    top: 65%;
+    color:#fff;
+    text-shadow: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.mensaje{
+    position: absolute;
+    top: 85%;
+    right: 10%;
+    font-size: 20px;
+    font-weight:bold;
+}
+.vidasdelenemigo{
+    font-size: 18px;
+    position: absolute;
+    left: 55%;
+    top: 70%;
+    color:#fff;
+    text-shadow: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}

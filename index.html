@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOKEPON!</title>
+    <link rel="stylesheet" href="./Styles/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <h1>MOKEPON!</h1>
+
+
+    
+    <section id="select-attack">
+        <p>Tu mascota es: <span id="petplayer"></span> </p>
+        <p>La mascota del enemigo es: <span id="petenemy"></span> </p>
+        
+        <p>
+        <ol>
+            <li><button id="buttonfire" class="fire">fire</button></li>
+            <li><button id="buttonwater" class="water">water</button></li>
+            <li><button id="buttonearth" class="hearth">Hearth</button></li>
+        </ol>
+        </p>
+    </section>
+    
+    
+    <section id="reiniciar">
+        <button id="reiniciar" class="reload"><span>reiniciar</span></button>
+    </section>
+
+    
+        
+
+    
+    <div class="container"></div>
+        <div class="card">
+            <img src="./Images/fire.png" alt="" class="elements">
+            <img src="./Images/charizard.png" class="card-img slowfloat" >
+            <div class="card-body">
+                <h5>charizard</h5>
+                <p>es el cuarto Pokémon que Ash capturó en Kanto, y su quinto en total. Lo tiene desde que era un Charmander y actualmente se encuentra en el laboratorio del profesor Oak.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container2"></div>
+        <div class="card2">
+            <img src="./Images/water.png" alt="" class="elements2">
+            <img src="./Images/descarga.png" class="card-img2 slowfloat2" >
+            <div class="card-body2">
+                <h5 class="squirtle">blastoise</h5>
+                <p>es un Pokémon de tipo agua introducido en la primera generación. Es la evolución de Wartortle.
+                    Su nombre proviene de las palabras inglesas blast (explosión o ráfaga) 
+            </div>
+        </div>
+    </div>
+    <div class="container3"></div>
+        <div class="card3">
+            <img src="./Images/earth.png" alt="" class="elements3">
+            <img src="./Images/200px-Rhydon.png" class="card-img3 slowfloat3" >
+            <div class="card-body3">
+                <h5 class="rhydon">rhydon</h5>
+                <p>Rhydon (サイドン Saidon en japonés) es un Pokémon de tipo tierra/roca introducido en la primera generación. </p>
+            </div>
+        </div>
+    </div>
+    
+
+    <section id="selectpet">
+        <h2>Select pet</h2>
+
+        <label for="charizard" class="charizard1">Charizard</label>
+        <input type="radio" name="pet" id="charizard" class="charizard">
+        
+        <label for="squirtle" class="squirtle1">blastoise</label>
+        <input type="radio" name="pet" id="squirtle" class="squirtle2">
+        
+        <label for="rhydon" class="rhydon1">rhyon</label>
+        <input type="radio" name="pet" id="rhydon" class="rhydon2">
+
+        <button id="buttonpet" class="Selects"><span> Seleccionar</span></button>
+
+    </section>
+    <section id="mensaje" class="mensaje"></section>
+    <p class="vidasdeljugador">La vida de tu mascota es: 💗💗💗 <span id="lifeplayer"></span></p>
+    <p class="vidasdelenemigo">La vida del enemigo es: 🖤🖤🖤 <span id="lifeenemy" ></span></p>
+
+    <script src="./Scrips/app.js"></script>
+    
+</body>
+</html>
