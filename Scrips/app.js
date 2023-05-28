@@ -20,9 +20,21 @@ function StartGame(){
     let ButtonReload = document.getElementById("reiniciar")
     ButtonReload.addEventListener("click", ReloadGame)
 
+    joinToGame()
 }
 
-
+function joinToGame()
+{
+    fetch("http://localhost:8080/join")
+        .then(function (res){
+            if(res.ok) {
+                res.text()
+                .then(function(respuesta){
+                    console.log(respuesta)
+                })
+            }
+        })
+}
 
 function SeleccionarMascotaJugador(){
     let InputCharizard = document.getElementById("charizard")
