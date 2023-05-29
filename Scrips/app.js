@@ -2,7 +2,7 @@ let AttackPlayer
 let AttackEnemy
 let LifeisPlayer = 3
 let LifeisEnemy = 3
-
+let playerid = null
 
 
 
@@ -23,14 +23,14 @@ function StartGame(){
     joinToGame()
 }
 
-function joinToGame()
-{
-    fetch("http://localhost:8080/join")
-        .then(function (res){
-            if(res.ok) {
+function joinToGame(){
+    fetch("http://localhost:8080/unirse")
+        .then(function (res) {
+            if (res.ok) {
                 res.text()
-                .then(function(respuesta){
+                .then(function(respuesta) {
                     console.log(respuesta)
+                    playerid = respuesta
                 })
             }
         })
@@ -52,10 +52,24 @@ function SeleccionarMascotaJugador(){
     } else{
         
     }
+    selectMokepon(SpanPetPlayer)
     seleccionarmascotaenemigo()
     
 
 }
+
+function selectMokepon(SpanPetPlayer) {
+    fetch(`http://localhost:8080/mokepon/${playerid}`, {
+        method: "post",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            mokepon: SpanPetPlayer
+        })
+    })
+}
+
 function seleccionarmascotaenemigo() {
     let mascotaAleatoria = aleatorio(1,3)
     let SpanPetEnemy = document.getElementById('petenemy')
