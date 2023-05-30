@@ -1,5 +1,7 @@
 const express = require("express")
 const cors = require("cors")
+const host = '127.0.0.1'
+const port = 3000
 
 const app = express()
 
@@ -16,9 +18,15 @@ class player {
     asignarMokepon(mokepon) {
         this.mokepon = mokepon
     }
+
+    actualizarPosicion(x, y) {
+        this.x = x
+        this.y = y
+    }
+    
 }
 
-class Mokepon {
+class mokepon {
     constructor(name) {
         this.name = name
     }
@@ -38,13 +46,13 @@ app.get("/unirse", (req, res) => {
 app.post("/mokepon/:playerid", (req, res) => {
     const  playerid = req.params.playerid || ""
     const name = req.body.mokepon || ""
-    const mokepon = new Mokepon(name)
+    const mokepon = new mokepon(name)
 
     
     const playerIndex = players.findIndex((player) => playerid === player.id)
     
     if(playerIndex >= 0) {
-        players[playerIndex].asignarMokepon(mokepon)
+        players[playerIndex].actualizarPosicion(x, y)
     }
 
 
@@ -53,6 +61,19 @@ app.post("/mokepon/:playerid", (req, res) => {
     res.end()
 })
 
-app.listen(8080, () => {
+app.post("/mokepon/:playerid/posicion", (req, res) => {
+    const playerid = req.params.playerid || ""
+    const x = req.body.x || 0
+    const y = req.body.y || 0
+
+    const playerIndex = players.findIndex((player) => playerid === player.id)
+
+    if(playerIndex >= 0) {
+        players[playerIndex].asignarMokepon(mokepon)
+    }
+    res.end()
+})
+
+app.listen(port, host, () => {
     console.log("servidor funcionando correctamente")
 })

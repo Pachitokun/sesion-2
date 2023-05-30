@@ -152,7 +152,12 @@ function AttackAleatorioEnemy(){
         AttackEnemy = '🌪🌫 earthquake'
     }
     combat()
+    enviarPsicion(mascotaJugadorObjeto.x,mascotaJugadorObjeto.y)
 
+}
+function enviarPsicion(x, y) 
+{
+    fetch("http://localhost:8080")
 }
 function crearMensaje(resultado){
     let sectionMensajes = document.getElementById("mensaje")
